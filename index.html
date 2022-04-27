@@ -2,6 +2,19 @@
 <html>
   <head>
   <title>APACW Website</title>
+    <script>
+      let minutes = 0;
+      function doTimeout() {
+        alert("Timed out, you have been on the site for more than 60 minutes, please logoff")
+        location.replace("http://chrome.google.com")
+      }
+      while (await(60)) {
+        minutes + 1
+        if (minutes == 60) {
+          doTimeout()
+        }
+      }
+    </script>
   </head>
   <body>
     <p id="main" style="font-family:verdana">
