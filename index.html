@@ -8,7 +8,8 @@
         alert("Timed out, you have been on the site for more than 60 minutes, please logoff")
         location.replace("http://chrome.google.com")
       }
-      while (await(60)) {
+      while (true) {
+        await(60)
         minutes + 1
         if (minutes == 60) {
           doTimeout()
