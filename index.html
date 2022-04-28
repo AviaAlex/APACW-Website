@@ -11,8 +11,7 @@
       setInterval(function(){ 
     minutes + 1
         if (minutes >= 60) {
-          alert("Page timed out.")
-          location.replace("http://chrome.google.com")
+          doTimeout()
         }
 }, 60000);
     </script>
